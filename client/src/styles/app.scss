@@ -1,0 +1,20 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// global
+@import './global/variable';
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-container {
+  @extend .container;
+  &--adjustment {
+    padding: 70px 15px;
+  }
+}
