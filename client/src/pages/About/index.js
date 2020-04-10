@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='main-container main-container--adjustment'>
       <div className='row'>
-        <div className='col-12 col-sm-4'>
+        <div className='col-12 col-sm-4 mb-2'>
           <div className='image'>
             <div className='image__frame'>
               <img
@@ -17,7 +17,9 @@ const About = () => {
           </div>
         </div>
         <div className='col-12 col-sm-8 align-self-center'>
-          <h2 className='mb-4'>FRONT-END DEVELOPER</h2>
+          <h2 className='mb-4'>
+            FRONT-END <span className='text-primary'>DEVELOPER</span>
+          </h2>
 
           <p>
             I'm <b>Jeremy Espinosa</b>. I'm a simple, creative, enthusiastic and
