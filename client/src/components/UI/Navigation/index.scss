@@ -152,11 +152,13 @@
       &.active {
         color: #00b0dc;
 
-        &:after {
-          content: '';
-          border-bottom: 1px solid #00b0dc;
-          display: block;
-          margin: 0px 2px;
+        @media (min-width: $sm) {
+          &:after {
+            content: '';
+            border-bottom: 1px solid #00b0dc;
+            display: block;
+            margin: 0px 2px;
+          }
         }
       }
     }

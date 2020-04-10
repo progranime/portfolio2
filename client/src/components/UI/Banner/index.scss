@@ -27,12 +27,16 @@
     transform: translate(-50%, -50%);
     z-index: 15;
     text-align: center;
+    width: 80%;
 
-    img {
+    .profile-image {
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
       border-radius: 100%;
       border: 5px solid #ccc;
-      width: 150px;
-      margin-bottom: 15px;
+      margin: 15px auto;
     }
 
     .details {

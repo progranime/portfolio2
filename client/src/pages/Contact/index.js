@@ -7,9 +7,11 @@ import {
   FormGroup,
   FormLabel,
   FormInput,
-  FormTextarea
+  FormTextarea,
+  FormError
 } from '../../components/UI'
 import { useForm } from '../../hooks/useForm'
+import { contactValidation } from '../../utils/validations/contact'
 
 const initialState = {
   fullName: '',
@@ -18,10 +20,12 @@ const initialState = {
 }
 
 const Contact = () => {
-  const { values, changeHandler } = useForm(initialState)
+  const { values, changeHandler, submitHandler, blurHandler, errors } = useForm(
+    initialState,
+    contactValidation
+  )
 
-  const submitHandler = e => {
-    e.preventDefault()
+  const onSubmit = () => {
     console.log('submit: ', values)
   }
 
@@ -32,15 +36,20 @@ const Contact = () => {
       </h2>
 
       <Card>
-        <Form onSubmit={submitHandler}>
+        <Form onSubmit={submitHandler.bind(this, onSubmit)}>
           <FormGroup>
             <FormLabel htmlFor='fullName'>Full Name</FormLabel>
             <FormInput
               id='fullName'
               name='fullName'
-              onChange={changeHandler}
               value={values.fullName}
+              className={`form-control ${
+                errors.fullName ? 'form__invalid' : ''
+              }`}
+              onBlur={blurHandler}
+              onChange={changeHandler}
             />
+            {errors.fullName && <FormError message={errors.fullName} />}
           </FormGroup>
 
           <FormGroup>
@@ -49,9 +58,12 @@ const Contact = () => {
               type='email'
               id='email'
               name='email'
+              className={`form-control ${errors.email ? 'form__invalid' : ''}`}
+              onBlur={blurHandler}
               onChange={changeHandler}
               value={values.email}
             />
+            {errors.email && <FormError message={errors.email} />}
           </FormGroup>
 
           <FormGroup>
@@ -59,9 +71,14 @@ const Contact = () => {
             <FormTextarea
               id='message'
               name='message'
+              className={`form-control ${
+                errors.message ? 'form__invalid' : ''
+              }`}
+              onBlur={blurHandler}
               onChange={changeHandler}
               value={values.message}
             />
+            {errors.message && <FormError message={errors.message} />}
           </FormGroup>
 
           <div className='text-right'>

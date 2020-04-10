@@ -7,7 +7,12 @@ const Home = () => {
   return (
     <div>
       <Banner>
-        <img src={`${process.env.PUBLIC_URL}/assets/home_picture.jpg`} alt='' />
+        <div
+          className='profile-image'
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/home_picture.jpg)`
+          }}
+        ></div>
         <div className='details'>
           <p className='title'>Jeremy Espinosa</p>
           <p className='description mb-2'>Front End Developer</p>
