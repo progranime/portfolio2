@@ -9,7 +9,7 @@ const Banner = props => {
         <div
           className='banner__background'
           style={{
-            backgroundImage: `url(http://jeremyespinosa.herokuapp.com/images/assets/workplace.jpg)`
+            backgroundImage: `url(${props.backgroundImage})`
           }}
         ></div>
         <div className='banner__content'>{props.children}</div>
@@ -17,6 +17,10 @@ const Banner = props => {
       <div className='banner__overlay'></div>
     </div>
   )
+}
+
+Banner.defaultProps = {
+  backgroundImage: `${process.env.PUBLIC_URL}/assets/planning.jpg`
 }
 
 export default Banner

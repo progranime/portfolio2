@@ -7,10 +7,7 @@ const Home = () => {
   return (
     <div>
       <Banner>
-        <img
-          src='https://media-exp1.licdn.com/dms/image/C5103AQGjrqkWxoYGhw/profile-displayphoto-shrink_200_200/0?e=1587600000&v=beta&t=KjrbMaMQVrQCdckGwqS_PcXPpSZOyQ_tO7tFzuFA__k'
-          alt=''
-        />
+        <img src={`${process.env.PUBLIC_URL}/assets/home_picture.jpg`} alt='' />
         <div className='details'>
           <p className='title'>Jeremy Espinosa</p>
           <p className='description mb-2'>Front End Developer</p>

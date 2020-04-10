@@ -10,7 +10,7 @@ const About = () => {
           <div className='image'>
             <div className='image__frame'>
               <img
-                src='https://mourithemes.com/robin/robin/images/about/a1.jpg'
+                src={`${process.env.PUBLIC_URL}/assets/about_picture.jpg`}
                 alt=''
               />
             </div>
