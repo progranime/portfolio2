@@ -1,0 +1,10 @@
+.image {
+  &__frame {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    img {
+      width: 100%;
+    }
+  }
+}

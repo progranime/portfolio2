@@ -9,7 +9,7 @@ const Banner = props => {
         <div
           className='banner__background'
           style={{
-            backgroundImage: `url(https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg)`
+            backgroundImage: `url(http://jeremyespinosa.herokuapp.com/images/assets/workplace.jpg)`
           }}
         ></div>
         <div className='banner__content'>{props.children}</div>

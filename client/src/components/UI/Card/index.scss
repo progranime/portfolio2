@@ -1,0 +1,25 @@
+.card {
+  border: none !important;
+  box-shadow: 3px 3px 8px #ddd;
+  height: 100%;
+
+  &__container {
+    padding: 15px;
+  }
+
+  &__header {
+    p {
+      font-weight: bold;
+      color: #00b0dc;
+      font-size: 18px;
+    }
+  }
+
+  &__body {
+    p {
+    }
+  }
+
+  &__footer {
+  }
+}

@@ -1,15 +1,20 @@
+$primary: #00b0dc;
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // global
 @import './global/variable';
 
+// components
+@import './components/image';
+
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
 }
 
 body {
   overflow-x: hidden;
+  font-size: 14px;
 }
 
 .main-container {

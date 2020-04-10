@@ -1,0 +1,19 @@
+.list {
+  padding: 0;
+  margin: 0;
+  li {
+  }
+
+  &--disc {
+    list-style-type: disc;
+    padding-left: 15px;
+  }
+
+  &--no-style {
+    list-style: none;
+  }
+
+  &--col-2 {
+    column-count: 2;
+  }
+}
