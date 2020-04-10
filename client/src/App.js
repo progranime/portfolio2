@@ -17,21 +17,11 @@ function App() {
           <Navigation />
 
           <Switch>
-            <Route path='/' exact>
-              <Home />
-            </Route>
-            <Route path='/about' exact>
-              <About />
-            </Route>
-            <Route path='/portfolio' exact>
-              <Portfolio />
-            </Route>
-            <Route path='/experience' exact>
-              <Experience />
-            </Route>
-            <Route path='/contact' exact>
-              <Contact />
-            </Route>
+            <Route path='/' exact render={() => <Home />} />
+            <Route path='/about' exact render={() => <About />} />
+            <Route path='/portfolio' exact render={() => <Portfolio />} />
+            <Route path='/experience' exact render={() => <Experience />} />
+            <Route path='/contact' exact render={() => <Contact />} />
           </Switch>
         </Router>
       </Suspense>

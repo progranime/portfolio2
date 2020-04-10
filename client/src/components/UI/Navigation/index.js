@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, withRouter } from 'react-router-dom'
 
 import './index.scss'
 
@@ -9,7 +9,6 @@ const initialState = {
 
 const Navigation = props => {
   const [values, setValues] = useState(initialState)
-  const pathname = window.location.pathname
 
   const toggleMenuHandler = () => {
     setValues({
@@ -17,16 +16,17 @@ const Navigation = props => {
       isNavOpen: !values.isNavOpen
     })
   }
-
   return (
     <div
       className={`navigation ${
-        pathname === '/' || pathname === '' ? '' : 'navigation--secondary'
+        props.location.pathname === '/' || props.location.pathname === ''
+          ? ''
+          : 'navigation--secondary'
       }`}
     >
       <div className='navigation__container container'>
         <div className='navigation__logo'>
-          <Link to='/' onClick={toggleMenuHandler}>
+          <Link to='/'>
             <span>
               JERE<span>MY</span>
             </span>
@@ -54,6 +54,7 @@ const Navigation = props => {
           <li>
             <NavLink
               to='/about'
+              exact
               activeClassName='active'
               onClick={toggleMenuHandler}
             >
@@ -63,6 +64,7 @@ const Navigation = props => {
           <li>
             <NavLink
               to='/portfolio'
+              exact
               activeClassName='active'
               onClick={toggleMenuHandler}
             >
@@ -72,6 +74,7 @@ const Navigation = props => {
           <li>
             <NavLink
               to='/experience'
+              exact
               activeClassName='active'
               onClick={toggleMenuHandler}
             >
@@ -81,6 +84,7 @@ const Navigation = props => {
           <li>
             <NavLink
               to='/contact'
+              exact
               activeClassName='active'
               onClick={toggleMenuHandler}
             >
@@ -93,4 +97,4 @@ const Navigation = props => {
   )
 }
 
-export default Navigation
+export default withRouter(Navigation)

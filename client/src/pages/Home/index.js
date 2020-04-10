@@ -12,9 +12,11 @@ const Home = () => {
           alt=''
         />
         <div className='details'>
-          <p className='title'>I'm Jeremy</p>
-          <p className='description'>Front End Developer</p>
-          <Link to='/about'>Learn More >></Link>
+          <p className='title'>Jeremy Espinosa</p>
+          <p className='description mb-2'>Front End Developer</p>
+          <Link to='/about' className='btn btn-primary text-white'>
+            Learn More
+          </Link>
         </div>
       </Banner>
     </div>
