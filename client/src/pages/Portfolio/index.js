@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ImageGallery from 'react-image-gallery'
 
 import { Card, List, Badge, Spinner } from '../../components/UI'
 
@@ -28,6 +29,32 @@ const initialState = {
         'PHP',
         'CodeIgniter',
         'MYSQL'
+      ],
+      gallery: [
+        {
+          original: `${process.env.PUBLIC_URL}/images/avatarmaker/1.jpg`,
+          thumbnail: `${process.env.PUBLIC_URL}/images/avatarmaker/1.jpg`
+        },
+        {
+          original: `${process.env.PUBLIC_URL}/images/avatarmaker/2.jpg`,
+          thumbnail: `${process.env.PUBLIC_URL}/images/avatarmaker/2.jpg`
+        },
+        {
+          original: `${process.env.PUBLIC_URL}/images/avatarmaker/3.jpg`,
+          thumbnail: `${process.env.PUBLIC_URL}/images/avatarmaker/3.jpg`
+        },
+        {
+          original: `${process.env.PUBLIC_URL}/images/avatarmaker/4.jpg`,
+          thumbnail: `${process.env.PUBLIC_URL}/images/avatarmaker/4.jpg`
+        },
+        {
+          original: `${process.env.PUBLIC_URL}/images/avatarmaker/5.jpg`,
+          thumbnail: `${process.env.PUBLIC_URL}/images/avatarmaker/5.jpg`
+        },
+        {
+          original: `${process.env.PUBLIC_URL}/images/avatarmaker/6.jpg`,
+          thumbnail: `${process.env.PUBLIC_URL}/images/avatarmaker/6.jpg`
+        }
       ]
     }
   ]
@@ -40,12 +67,22 @@ const Portfolio = () => {
     const portfolios = values.portfolios.map(portfolio => {
       return (
         <Card className='card card--primary' key={portfolio.id}>
-          <div
-            className='card__image-holder'
-            style={{
-              backgroundImage: `url(${portfolio.thumbnail})`
-            }}
-          ></div>
+          <div className='card__image-holder'>
+            <ImageGallery
+              items={portfolio.gallery}
+              showPlayButton={false}
+              showNav={false}
+              renderItem={data => {
+                return (
+                  <div
+                    className='card__image-thumbnail'
+                    style={{ backgroundImage: `url(${data.original})` }}
+                  />
+                )
+              }}
+            />
+          </div>
+
           <div className='card__details'>
             <h3>{portfolio.title}</h3>
             <p className='text-secondary'>

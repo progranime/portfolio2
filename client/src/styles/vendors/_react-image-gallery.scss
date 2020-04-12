@@ -1,0 +1,29 @@
+.image-gallery {
+  &-content {
+    &.fullscreen {
+      .card__image-thumbnail {
+        height: 90vh;
+      }
+    }
+  }
+
+  &-thumbnail {
+    border-radius: 5px;
+
+    &.active {
+      border: 3px solid $primary;
+    }
+
+    &:hover {
+      border: 3px solid $primary;
+    }
+
+    &-image {
+      height: 80px;
+
+      @media (min-width: $sm) {
+        height: 100px;
+      }
+    }
+  }
+}
