@@ -7,6 +7,15 @@ const initialState = {
   isNavOpen: false
 }
 
+const primaryURL = ['', '/']
+const secondaryURL = [
+  '/profile',
+  '/portfolio',
+  '/code',
+  '/contact',
+  '/experience'
+]
+
 const Navigation = props => {
   const [values, setValues] = useState(initialState)
 
@@ -16,14 +25,16 @@ const Navigation = props => {
       isNavOpen: !values.isNavOpen
     })
   }
+
+  const navigationClass = () => {
+    if (primaryURL.includes(props.location.pathname)) return ''
+    else if (!secondaryURL.includes(props.location.pathname)) return ''
+
+    return 'navigation--secondary'
+  }
+
   return (
-    <div
-      className={`navigation ${
-        props.location.pathname === '/' || props.location.pathname === ''
-          ? ''
-          : 'navigation--secondary'
-      }`}
-    >
+    <div className={`navigation ${navigationClass()}`}>
       <div className='navigation__container container'>
         <div className='navigation__logo'>
           <Link to='/'>

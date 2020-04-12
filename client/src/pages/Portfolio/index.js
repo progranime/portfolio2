@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import { Card, List, Badge, Spinner } from '../../components/UI'
 
@@ -60,14 +59,7 @@ const Portfolio = () => {
               ))}
             </List>
 
-            <Link
-              className='btn btn-primary my-2'
-              to={`/portfolio/${portfolio.id}`}
-            >
-              SEE MORE
-            </Link>
-
-            <p className='mb-2'>
+            <p className='mt-4 mb-2'>
               <b>Technologies Used:</b>
             </p>
 
@@ -90,10 +82,6 @@ const Portfolio = () => {
 
   return (
     <div className='main-container main-container--adjustment'>
-      <h2 className='text-center my-4'>
-        MY <span className='text-primary'>PORTFOLIO</span>
-      </h2>
-
       {values.portfolios ? renderPortfolios() : <Spinner />}
     </div>
   )

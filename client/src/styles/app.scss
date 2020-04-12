@@ -19,5 +19,9 @@ body {
   @extend .container;
   &--adjustment {
     padding: 70px 15px;
+
+    @media (min-width: $sm) {
+      padding: 70px 5px;
+    }
   }
 }

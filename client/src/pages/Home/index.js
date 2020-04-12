@@ -16,7 +16,7 @@ const Home = () => {
         <div className='details'>
           <p className='title'>Jeremy Espinosa</p>
           <p className='description mb-2'>Front End Developer</p>
-          <Link to='/about' className='btn btn-primary text-white'>
+          <Link to='/profile' className='btn btn-primary text-white'>
             Learn More
           </Link>
         </div>

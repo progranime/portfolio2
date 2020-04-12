@@ -1,3 +1,5 @@
+@import '../../../styles/global/variable';
+
 .list {
   padding: 0;
   margin: 0;
@@ -14,7 +16,11 @@
   }
 
   &--col-2 {
-    column-count: 2;
+    column-count: 1;
+
+    @media (min-width: $sm) {
+      column-count: 2;
+    }
   }
 
   &--inline {
