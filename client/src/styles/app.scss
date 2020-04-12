@@ -1,9 +1,7 @@
-$primary: #00b0dc;
-
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-
 // global
 @import './global/variable';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // components
 @import './components/image';

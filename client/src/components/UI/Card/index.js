@@ -4,7 +4,7 @@ import './index.scss'
 
 const Card = props => {
   return (
-    <div className='card'>
+    <div className={props.className}>
       <div className='card__container'>
         {props.header && (
           <div className='card__header'>
@@ -23,6 +23,7 @@ const Card = props => {
 }
 
 Card.defaultProps = {
+  className: 'card',
   header: '',
   footer: ''
 }

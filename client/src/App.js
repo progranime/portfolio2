@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Navigation, Spinner } from './components/UI'
 
 const Home = React.lazy(() => import('./pages/Home'))
-const About = React.lazy(() => import('./pages/About'))
+const Profile = React.lazy(() => import('./pages/Profile'))
 const Portfolio = React.lazy(() => import('./pages/Portfolio'))
 const Experience = React.lazy(() => import('./pages/Experience'))
+const Code = React.lazy(() => import('./pages/Code'))
 const Contact = React.lazy(() => import('./pages/Contact'))
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
 
           <Switch>
             <Route path='/' exact render={() => <Home />} />
-            <Route path='/about' exact render={() => <About />} />
+            <Route path='/Profile' exact render={() => <Profile />} />
             <Route path='/portfolio' exact render={() => <Portfolio />} />
             <Route path='/experience' exact render={() => <Experience />} />
+            <Route path='/code' exact render={() => <Code />} />
             <Route path='/contact' exact render={() => <Contact />} />
           </Switch>
         </Router>

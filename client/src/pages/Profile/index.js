@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button, List } from '../../components/UI'
 
-const About = () => {
+const Profile = () => {
   return (
     <div className='main-container main-container--adjustment'>
       <div className='row'>
@@ -62,4 +62,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Profile

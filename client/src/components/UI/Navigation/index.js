@@ -53,12 +53,12 @@ const Navigation = props => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/profile'
               exact
               activeClassName='active'
               onClick={toggleMenuHandler}
             >
-              About
+              Profile
             </NavLink>
           </li>
           <li>
@@ -79,6 +79,16 @@ const Navigation = props => {
               onClick={toggleMenuHandler}
             >
               Experience
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/code'
+              exact
+              activeClassName='active'
+              onClick={toggleMenuHandler}
+            >
+              Code
             </NavLink>
           </li>
           <li>

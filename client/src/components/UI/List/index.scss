@@ -16,4 +16,16 @@
   &--col-2 {
     column-count: 2;
   }
+
+  &--inline {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin: 0 5px 5px 0;
+      }
+    }
+  }
 }
