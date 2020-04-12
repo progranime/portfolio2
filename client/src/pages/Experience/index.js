@@ -64,7 +64,7 @@ const Experience = () => {
       </h2>
 
       <div className='row'>
-        <div className='col-12 col-sm-6'>
+        <div className='col-12 col-sm-6 mb-2'>
           <Card header='Front-End Developer'>
             <p>
               <b>Music Tribe</b>
@@ -94,7 +94,7 @@ const Experience = () => {
             </List>
           </Card>
         </div>
-        <div className='col-12 col-sm-6'>
+        <div className='col-12 col-sm-6 mb-2'>
           <Card header='Web Developer '>
             <p>
               <b>Gee Pacific Services Inc</b>
