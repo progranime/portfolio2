@@ -52,10 +52,11 @@ const codeReducer = (state = initialState, { type, payload }) => {
     switch (type) {
         case GET_CODES:
             return {
-                ...state
+                ...state,
+                payload
             }
         default:
-            return state
+            return { ...state }
     }
 }
 
