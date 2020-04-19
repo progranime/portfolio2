@@ -64,7 +64,8 @@ const Portfolio = props => {
 
   useEffect(() => {
     props.getPortfolios()
-  })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className='main-container main-container--adjustment'>
