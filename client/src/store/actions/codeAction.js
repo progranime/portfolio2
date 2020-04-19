@@ -6,7 +6,7 @@ export const getCodes = () => {
   return async dispatch => {
     const getCodes = await axios({
       method: 'GET',
-      url: `http://localhost:5000/api/codes`
+      url: `${process.env.REACT_APP_BACKEND_URL}/codes`
     })
 
     dispatch({

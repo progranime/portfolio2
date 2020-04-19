@@ -34,6 +34,8 @@ export const useScroll = initialState => {
     return () => {
       window.removeEventListener('scroll')
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const scrollTop = () => {

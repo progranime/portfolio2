@@ -6,7 +6,7 @@ export const getPortfolios = () => {
   return async dispatch => {
     const getPortfolios = await axios({
       method: 'get',
-      url: `http://localhost:5000/api/portfolios`
+      url: `${process.env.REACT_APP_BACKEND_URL}/portfolios`
     })
 
     dispatch({
