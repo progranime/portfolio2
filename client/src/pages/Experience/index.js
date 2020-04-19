@@ -59,6 +59,9 @@ const Experience = () => {
 
   return (
     <div className='main-container main-container--adjustment'>
+      <h2 className='text-center my-4'>
+        My <span className='text-primary'>Experience</span>
+      </h2>
       <div className='row'>
         <div className='col-12 col-sm-6 mb-2'>
           <Card header='Front-End Developer'>
@@ -91,7 +94,7 @@ const Experience = () => {
           </Card>
         </div>
         <div className='col-12 col-sm-6 mb-2'>
-          <Card header='Web Developer '>
+          <Card header='Web Developer'>
             <p>
               <b>Gee Pacific Services Inc</b>
             </p>
@@ -115,7 +118,7 @@ const Experience = () => {
       </div>
 
       <h2 className='text-center my-4'>
-        MY <span className='text-primary'>SKILLS</span>
+        My <span className='text-primary'>Skills</span>
       </h2>
       <Card>{renderSkills()}</Card>
     </div>
