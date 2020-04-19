@@ -6,59 +6,63 @@ import { connect } from 'react-redux'
 import { Card, Spinner, FloatingAction } from '../../components/UI'
 import { getCodes } from '../../store/actions/codeAction'
 
-const Code = (props) => {
-    const renderCodes = () => {
-        const codes = props.codes.map((code) => {
-            return (
-                <div className='col-12 col-sm-6 col-md-4 mb-2' key={code.id}>
-                    <Card className='card card--secondary'>
-                        <div
-                            className='card__image-holder'
-                            style={{
-                                backgroundImage: `url(${code.thumbnail})`
-                            }}
-                        />
-                        <div className='card__details'>
-                            <p className='title'>{code.title}</p>
-                            <p className='description'>{code.description}</p>
+const Code = props => {
+  const renderCodes = () => {
+    const codes = props.codes.map(code => {
+      return (
+        <div className='col-12 col-sm-6 col-md-4 mb-2' key={code.id}>
+          <Card className='card card--secondary'>
+            <div
+              className='card__image-holder'
+              style={{
+                backgroundImage: `url(${code.thumbnail})`
+              }}
+            />
+            <div className='card__details'>
+              <p className='title'>{code.title}</p>
+              <p className='description'>{code.description}</p>
 
-                            <a
-                                href={`${code.link}`}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                            >
-                                <FloatingAction>
-                                    <FontAwesomeIcon icon={faLink} />
-                                </FloatingAction>
-                            </a>
-                        </div>
-                    </Card>
-                </div>
-            )
-        })
-
-        return <div className='row'>{codes}</div>
-    }
-
-    useEffect(() => {
-        props.getCodes()
+              <a
+                href={`${code.link}`}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FloatingAction>
+                  <FontAwesomeIcon icon={faLink} />
+                </FloatingAction>
+              </a>
+            </div>
+          </Card>
+        </div>
+      )
     })
 
-    return (
-        <div className='main-container main-container--adjustment'>
-            {props.codes ? renderCodes() : <Spinner />}
-        </div>
-    )
+    return <div className='row'>{codes}</div>
+  }
+
+  useEffect(() => {
+    props.getCodes()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  return (
+    <div className='main-container main-container--adjustment'>
+      {props.codes ? renderCodes() : <Spinner />}
+    </div>
+  )
 }
 
-const mapStateToProps = (state) => {
-    return {
-        codes: state.code.codes
-    }
+const mapStateToProps = state => {
+  return {
+    codes: state.code.codes
+  }
 }
 
 const mapDispatchToProps = {
-    getCodes
+  getCodes
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Code)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Code)
