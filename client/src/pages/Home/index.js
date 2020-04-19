@@ -12,6 +12,7 @@ const Home = () => {
           src={`${process.env.PUBLIC_URL}/assets/home_picture.jpg`}
           render={(src, style) => (
             <div
+              className='profile-image'
               style={Object.assign(style, { backgroundImage: `url(${src})` })}
             />
           )}
