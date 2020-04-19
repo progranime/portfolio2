@@ -59,10 +59,6 @@ const Experience = () => {
 
   return (
     <div className='main-container main-container--adjustment'>
-      <h2 className='text-center my-4'>
-        MY <span className='text-primary'>EXPERIENCE</span>
-      </h2>
-
       <div className='row'>
         <div className='col-12 col-sm-6 mb-2'>
           <Card header='Front-End Developer'>
