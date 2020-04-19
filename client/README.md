@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Steps on how to deploy in heroku
+
+1. Go to client folder and run "npm run build"
+2. It will create build folder, copy it's files and paste it to the server/public folder
+3. Go to the server folder
+   1. Run git add .
+   2. Run git commit -m 'comment'
+   3. git push heroku master
+4. Check the deployed website
