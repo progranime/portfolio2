@@ -1,13 +1,13 @@
 .image-gallery {
   &-content {
     &.fullscreen {
-      .card__image-thumbnail {
+      .card__image-preview {
         height: 90vh;
       }
     }
   }
 
-  &-thumbnail {
+  &-preview {
     border-radius: 5px;
 
     &.active {

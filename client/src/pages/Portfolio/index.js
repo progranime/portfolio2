@@ -18,11 +18,21 @@ const Portfolio = props => {
               renderItem={data => {
                 return (
                   <div
-                    className='card__image-thumbnail'
+                    className='card__image-preview'
                     style={{
                       backgroundImage: `url(${data.original})`
                     }}
                   />
+                )
+              }}
+              renderThumbInner={data => {
+                return (
+                  <div
+                    className='card__image-thumbnail'
+                    style={{
+                      backgroundImage: `url(${data.thumbnail})`
+                    }}
+                  ></div>
                 )
               }}
             />
