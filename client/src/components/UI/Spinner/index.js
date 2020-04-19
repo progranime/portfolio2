@@ -16,8 +16,7 @@ const Spinner = props => {
 }
 
 Spinner.defaultProps = {
-  imageSrc:
-    'https://www.reviewpoint.com/wp-content/plugins/google-search-place/fonts/images/lg.curve-bars-loading-indicator.gif',
+  imageSrc: `${process.env.PUBLIC_URL}/assets/spinner.gif`,
   title: 'Just a sec ...'
 }
 
