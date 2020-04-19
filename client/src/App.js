@@ -1,7 +1,10 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { Navigation, Spinner } from './components/UI'
+import { Navigation, Spinner, FloatingAction } from './components/UI'
+import { useScroll } from './hooks/useScroll'
 
 const Home = React.lazy(() => import('./pages/Home'))
 const Profile = React.lazy(() => import('./pages/Profile'))
@@ -11,12 +14,26 @@ const Code = React.lazy(() => import('./pages/Code'))
 // const Contact = React.lazy(() => import('./pages/Contact'))
 const NotFound = React.lazy(() => import('./pages/NotFound'))
 
+const initialState = {
+  scrollYLimit: 300
+}
+
 function App() {
+  const { values, scrollTop } = useScroll(initialState)
+
   return (
     <div className='App'>
       <Suspense fallback={<Spinner />}>
         <Router>
           <Navigation />
+          {values.isBeyond && (
+            <FloatingAction
+              className='floating-action floating-action--scroll-up'
+              onClick={scrollTop}
+            >
+              <FontAwesomeIcon icon={faArrowUp} />
+            </FloatingAction>
+          )}
 
           <Switch>
             <Route path='/profile' exact render={() => <Profile />} />
