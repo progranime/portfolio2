@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProgressiveImage from 'react-progressive-image-loading'
 
 import { List } from '../../components/UI'
 
@@ -10,9 +11,11 @@ const Profile = () => {
         <div className='col-12 col-sm-4 mb-2'>
           <div className='image'>
             <div className='image__frame'>
-              <img
+              <ProgressiveImage
                 src={`${process.env.PUBLIC_URL}/assets/about_picture.jpg`}
-                alt=''
+                render={(src, style) => (
+                  <img src={src} style={style} alt='profile' />
+                )}
               />
             </div>
           </div>

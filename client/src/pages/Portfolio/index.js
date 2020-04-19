@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import ImageGallery from 'react-image-gallery'
 import { connect } from 'react-redux'
+import ProgressiveImage from 'react-progressive-image-loading'
 
 import { Card, List, Badge, Spinner } from '../../components/UI'
 import { getPortfolios } from '../../store/actions/portfolioAction'
@@ -17,22 +18,32 @@ const Portfolio = props => {
               showNav={false}
               renderItem={data => {
                 return (
-                  <div
-                    className='card__image-preview'
-                    style={{
-                      backgroundImage: `url(${data.original})`
-                    }}
+                  <ProgressiveImage
+                    src={data.original}
+                    render={(src, style) => (
+                      <div
+                        className='card__image-preview'
+                        style={Object.assign(style, {
+                          backgroundImage: `url(${src})`
+                        })}
+                      />
+                    )}
                   />
                 )
               }}
               renderThumbInner={data => {
                 return (
-                  <div
-                    className='card__image-thumbnail'
-                    style={{
-                      backgroundImage: `url(${data.thumbnail})`
-                    }}
-                  ></div>
+                  <ProgressiveImage
+                    src={data.thumbnail}
+                    render={(src, style) => (
+                      <div
+                        className='card__image-thumbnail'
+                        style={Object.assign(style, {
+                          backgroundImage: `url(${src})`
+                        })}
+                      />
+                    )}
+                  />
                 )
               }}
             />
