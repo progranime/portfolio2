@@ -21,17 +21,27 @@ const initialState = {
         },
         {
             id: 4,
+            title: 'Handlebarjs',
+            progress: '90%'
+        },
+        {
+            id: 5,
             title: 'React JS',
             progress: '80%'
         },
         {
-            id: 5,
+            id: 6,
             title: 'NodeJS',
             progress: '75%'
         },
         {
-            id: 6,
+            id: 7,
             title: 'PHP (CodeIgniter)',
+            progress: '80%'
+        },
+        {
+            id: 9,
+            title: 'MySQL',
             progress: '80%'
         }
     ]
@@ -74,7 +84,7 @@ const Experience = () => {
                         <p>August 2017 - Present</p>
                         <List className='list list--disc'>
                             <li>
-                                Responsible for creating, improving and
+                                Responsible for creating, optimizing and
                                 developing websites using best practices in
                                 coding.
                             </li>
