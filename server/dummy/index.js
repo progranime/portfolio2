@@ -17,7 +17,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SCSS)',
-            'Javascript',
+            'Javascript (ES6)',
             'JQuery',
             'Handlebarjs',
             'Gulp',
@@ -164,7 +164,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SCSS)',
-            'Javascript',
+            'Javascript (ES6)',
             'JQuery',
             'Handlebarjs',
             'Gulp',
@@ -260,7 +260,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SCSS)',
-            'Javascript',
+            'Javascript (ES6)',
             'JQuery',
             'Handlebarjs',
             'Gulp',
@@ -317,7 +317,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SCSS)',
-            'Javascript',
+            'Javascript (ES6)',
             'JQuery',
             'Gulp',
             'PHP',
@@ -360,7 +360,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SCSS)',
-            'Javascript',
+            'Javascript (ES6)',
             'JQuery',
             'Handlebarjs',
             'Gulp',
@@ -455,7 +455,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SCSS)',
-            'Javascript(ES6)',
+            'Javascript (ES6)',
             'ReactJS',
             'Redux',
             'Expressjs',
@@ -501,7 +501,7 @@ module.exports.PORTFOLIOS = [
         technologies: [
             'HTML/5',
             'CSS/3 (LESS/SASS)',
-            'Javascript(ES6)',
+            'Javascript (ES6)',
             'ReactJS',
             'Redux',
             'Expressjs',
