@@ -244,6 +244,54 @@ module.exports.PORTFOLIOS = [
         ]
     },
     {
+        id: 10,
+        title: 'Sales Forecast',
+        position: 'Front & Back End Developer',
+        description: '',
+        features: [
+            'Authentication using OneLogin API',
+            'Implements CronJob for importing new data on scheduled',
+            'Can export XLSX file with all of the data',
+            'Can Create/Read/Update data',
+            'Can track the history who changed the data',
+            'Dynamic filtering means filter list depends on the current data'
+        ],
+        technologies: [
+            'HTML/5',
+            'CSS/3 (LESS/SCSS)',
+            'React JS',
+            'PHP',
+            'CodeIgniter',
+            'MYSQL'
+        ],
+        gallery: [
+            {
+                original: `/images/sales-forecast/1.jpg`,
+                thumbnail: `/images/sales-forecast/1.jpg`
+            },
+            {
+                original: `/images/sales-forecast/2.jpg`,
+                thumbnail: `/images/sales-forecast/2.jpg`
+            },
+            {
+                original: `/images/sales-forecast/3.jpg`,
+                thumbnail: `/images/sales-forecast/3.jpg`
+            },
+            {
+                original: `/images/sales-forecast/4.jpg`,
+                thumbnail: `/images/sales-forecast/4.jpg`
+            },
+            {
+                original: `/images/sales-forecast/5.jpg`,
+                thumbnail: `/images/sales-forecast/5.jpg`
+            },
+            {
+                original: `/images/sales-forecast/6.jpg`,
+                thumbnail: `/images/sales-forecast/6.jpg`
+            }
+        ]
+    },
+    {
         id: 2,
         title: 'Job Description / Pledge',
         position: 'Front & Back End Developer',
