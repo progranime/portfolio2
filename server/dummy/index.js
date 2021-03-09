@@ -247,9 +247,10 @@ module.exports.PORTFOLIOS = [
         id: 10,
         title: 'Sales Forecast',
         position: 'Front & Back End Developer',
-        description: '',
+        description:
+            'This websites automates the importing of updated data from different source using CronJob. This helps user to determine which products need to be retosck.',
         features: [
-            'Authentication using OneLogin API',
+            'Authentication using Third Party API',
             'Implements CronJob for importing new data on scheduled',
             'Can export XLSX file with all of the data',
             'Can Create/Read/Update data',
