@@ -245,6 +245,96 @@ module.exports.PORTFOLIOS = [
     },
     {
         id: 10,
+        title: 'Sarangani Box Tracking System',
+        position: 'Front & Back End Developer',
+        description:
+            'Sarangani Box is a real time Tracking System giving the user every useful information related to its products.',
+        features: [
+            'Track package by Invoice or Tracking number',
+            'User Authentication',
+            'CRUD Shipment Information',
+            'CRUD User Information',
+            'Read/Delete Message Inquiries',
+            'Reports by location and status of the packages'
+        ],
+        technologies: [
+            'HTML/5',
+            'CSS/3 (LESS/SCSS)',
+            'Javascript (ES6)',
+            'JQuery',
+            'PHP',
+            'CodeIgniter',
+            'MYSQL'
+        ],
+        gallery: [
+            {
+                original: `/images/saranganiBox/1.png`,
+                thumbnail: `/images/saranganiBox/1.png`
+            },
+            {
+                original: `/images/saranganiBox/2.png`,
+                thumbnail: `/images/saranganiBox/2.png`
+            },
+            {
+                original: `/images/saranganiBox/3.png`,
+                thumbnail: `/images/saranganiBox/3.png`
+            },
+            {
+                original: `/images/saranganiBox/4.png`,
+                thumbnail: `/images/saranganiBox/4.png`
+            },
+            {
+                original: `/images/saranganiBox/5.png`,
+                thumbnail: `/images/saranganiBox/5.png`
+            },
+            {
+                original: `/images/saranganiBox/6.png`,
+                thumbnail: `/images/saranganiBox/6.png`
+            },
+            {
+                original: `/images/saranganiBox/7.png`,
+                thumbnail: `/images/saranganiBox/7.png`
+            },
+            {
+                original: `/images/saranganiBox/8.png`,
+                thumbnail: `/images/saranganiBox/8.png`
+            },
+            {
+                original: `/images/saranganiBox/9.png`,
+                thumbnail: `/images/saranganiBox/9.png`
+            },
+            {
+                original: `/images/saranganiBox/10.png`,
+                thumbnail: `/images/saranganiBox/10.png`
+            },
+            {
+                original: `/images/saranganiBox/11.png`,
+                thumbnail: `/images/saranganiBox/11.png`
+            },
+            {
+                original: `/images/saranganiBox/12.png`,
+                thumbnail: `/images/saranganiBox/12.png`
+            },
+            {
+                original: `/images/saranganiBox/13.png`,
+                thumbnail: `/images/saranganiBox/13.png`
+            },
+            {
+                original: `/images/saranganiBox/13.png`,
+                thumbnail: `/images/saranganiBox/13.png`
+            },
+            {
+                original: `/images/saranganiBox/14.png`,
+                thumbnail: `/images/saranganiBox/14.png`
+            },
+            {
+                original: `/images/saranganiBox/15.png`,
+                thumbnail: `/images/saranganiBox/15.png`
+            }
+        ]
+    },
+    {
+        id: 10,
         title: 'Sales Forecast',
         position: 'Front & Back End Developer',
         description:
