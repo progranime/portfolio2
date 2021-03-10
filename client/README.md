@@ -74,6 +74,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 3. Go to the server folder
    1. heroku login
    2. Run git add .
-   3. Run git commit -m 'comment'
+   3. git commit -am "make it better"
    4. git push heroku master
 4. Check the deployed website
