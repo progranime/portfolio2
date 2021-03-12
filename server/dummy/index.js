@@ -447,9 +447,9 @@ module.exports.PORTFOLIOS = [
         title: 'Superants.inc Website',
         position: 'Front & Back End Developer',
         description:
-            'Creates an avatar for business presentation and icons for the current company websites.',
+            'Superants.inc is an informational website to provide what the company can offer to its customer.',
         features: [
-            'Created informational websites to know what company offers',
+            'Informational website',
             'Used Google Maps API',
             'Created contact form to know users concerns.'
         ],
