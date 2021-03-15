@@ -49,7 +49,7 @@ const Profile = () => {
                         create something on my own which is helpful for others.
                     </p>
                     <p>
-                        I'm Experienced Web Developer seeking opportunity to
+                        I'm experienced Web Developer seeking opportunity to
                         bring knowledge of programming. A self-motivated IT
                         professional with huge knowledge and proficiency in
                         HTML, CSS, JavaScript, JQuery, Reactjs, Nodejs, PHP and
