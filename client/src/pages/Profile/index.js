@@ -39,8 +39,8 @@ const Profile = () => {
                 </div>
                 <div className='col-12 col-sm-8 align-self-center'>
                     <h2 className='mb-4'>
-                        FRONT-END{' '}
-                        <span className='text-primary'>DEVELOPER</span>
+                        Front-end{' '}
+                        <span className='text-primary'>Developer</span>
                     </h2>
 
                     <p>
